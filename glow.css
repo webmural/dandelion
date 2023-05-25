@@ -1,0 +1,29 @@
+.rose {
+  --rose: gold;
+  background: var(--rose);
+  color: rebeccapurple;
+}
+
+.rose:active {
+  --rose: khaki;
+}
+
+.rose ::selection {
+  background: darkviolet;
+  color: var(--rose);
+}
+
+.rose :any-link {
+  color: inherit;
+}
+
+@media (prefers-contrast: more) {
+  .rose {
+    --rose: lemonchiffon;
+    color: purple;
+  }
+
+  .rose:active {
+    --rose: mintcream;
+  }
+}
