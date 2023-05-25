@@ -13,11 +13,13 @@ a:nth-child(odd) {
 }
 
 article {
+  contain: layout;
   margin: 1ch;
 }
 
 nav,
 h1 {
+  contain: layout;
   display: inline-block;
   font: inherit;
   font-weight: bold;
@@ -26,12 +28,10 @@ h1 {
 }
 
 samp {
-  contain: layout;
   cursor: zoom-in;
   font-weight: bold;
   line-height: 1.236;
   margin-inline: 1ch;
-  overflow-wrap: anywhere;
 }
 
 samp:active {

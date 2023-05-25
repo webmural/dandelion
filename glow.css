@@ -1,9 +1,12 @@
+:target
+::selection,
 ::selection {
   background: var(--kin);
   color: var(--oil);
 }
 
-.glow {
+:root:target,
+:root {
   --oil: gold;
   --lio: khaki;
   --ink: purple;
@@ -12,7 +15,7 @@
   color: var(--kin);
 }
 
-.glow:active {
+:active {
   --oil: var(--lio);
 }
 
@@ -21,14 +24,14 @@
 }
 
 @media (prefers-contrast: more) {
-  .glow {
+  :root {
     --kin: var(--ink);
     --lio: mintcream;
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  .glow {
+  :root {
     background: var(--kin);
     color: var(--oil);
   }
