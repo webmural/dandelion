@@ -1,6 +1,6 @@
 ::selection {
-  background: skyblue;
-  color: purple;
+  background: darkviolet;
+  color: var(--oil);
 }
 
 .glow {
@@ -31,5 +31,10 @@
   .glow {
     background: var(--kin);
     color: var(--oil);
+  }
+
+  ::selection {
+    background: skyblue;
+    color: var(--kin);
   }
 }
