@@ -1,29 +1,35 @@
-.rose {
-  --rose: gold;
-  background: var(--rose);
-  color: rebeccapurple;
+::selection {
+  background: skyblue;
+  color: purple;
 }
 
-.rose:active {
-  --rose: khaki;
+.glow {
+  --oil: gold;
+  --lio: khaki;
+  --ink: purple;
+  --kin: rebeccapurple;
+  background: var(--oil);
+  color: var(--kin);
 }
 
-.rose ::selection {
-  background: darkviolet;
-  color: var(--rose);
+.glow:active {
+  --oil: var(--lio);
 }
 
-.rose :any-link {
+:any-link {
   color: inherit;
 }
 
 @media (prefers-contrast: more) {
-  .rose {
-    --rose: lemonchiffon;
-    color: purple;
+  .glow {
+    --kin: var(--ink);
+    --lio: mintcream;
   }
+}
 
-  .rose:active {
-    --rose: mintcream;
+@media (prefers-color-scheme: dark) {
+  .glow {
+    background: var(--kin);
+    color: var(--oil);
   }
 }
