@@ -1,5 +1,5 @@
 ::selection {
-  background: darkviolet;
+  background: var(--kin);
   color: var(--oil);
 }
 
@@ -34,7 +34,7 @@
   }
 
   ::selection {
-    background: skyblue;
+    background: var(--oil);
     color: var(--kin);
   }
 }
